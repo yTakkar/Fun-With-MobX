@@ -1,0 +1,46 @@
+{
+  "name": "fun-with-mobx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "dev": "webpack -d --watch",
+    "prod": "webpack -p --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yTakkar/Fun-With-MobX.git"
+  },
+  "author": "yTakkar <www.shtakkar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yTakkar/Fun-With-MobX/issues"
+  },
+  "homepage": "https://github.com/yTakkar/Fun-With-MobX#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "handy-log": "^1.0.3",
+    "mobx": "^3.6.1",
+    "mobx-react": "^4.4.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "serve-favicon": "^2.4.5"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.38",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.13.0",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}
