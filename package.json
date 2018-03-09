@@ -1,31 +1,26 @@
 {
-  "name": "fun-with-mobx",
+  "name": "js-fun",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "",
   "scripts": {
-    "start": "nodemon app.js",
-    "dev": "webpack -d --watch",
-    "prod": "webpack -p --watch"
+    "start": "parcel index.html -p 4660"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yTakkar/Fun-With-MobX.git"
+    "url": "git+https://github.com/yTakkar/JS-Fun.git"
   },
   "author": "yTakkar <www.shtakkar@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yTakkar/Fun-With-MobX/issues"
+    "url": "https://github.com/yTakkar/JS-Fun/issues"
   },
-  "homepage": "https://github.com/yTakkar/Fun-With-MobX#readme",
+  "homepage": "https://github.com/yTakkar/JS-Fun#readme",
   "dependencies": {
-    "express": "^4.16.2",
-    "handy-log": "^1.0.3",
     "mobx": "^3.6.1",
     "mobx-react": "^4.4.3",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "serve-favicon": "^2.4.5"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@types/react": "^16.0.38",
@@ -40,7 +35,6 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "eslint": "^4.13.0",
-    "eslint-plugin-react": "^7.7.0"
+    "jshint": "^2.9.5"
   }
 }
