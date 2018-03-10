@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { observer } from 'mobx-react'
+import _ from 'underscore'
 
 @observer
 export default class App extends Component {
@@ -18,7 +19,8 @@ export default class App extends Component {
   render() {
     let
       { users } = this.props.store,
-      map_users = users.map(u =>
+      sortedUsers = _.sortBy(users, 'id').reverse(),
+      map_users = sortedUsers.map(u =>
         <li
           key={u.id}
           onClick={() => this.deleteUser(u.id)}
