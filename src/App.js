@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { observer } from 'mobx-react'
 import _ from 'underscore'
+import Moment from 'moment'
 
 @observer
 export default class App extends Component {
@@ -8,7 +9,10 @@ export default class App extends Component {
   addUser = e => {
     let { addUser } = this.props.store
     if (e.which === 13) {
-      addUser({ id: new Date().getTime(), name: e.target.value })
+      addUser({
+        id: new Date(),
+        name: e.target.value
+      })
       e.target.value = ''
     }
   }
@@ -24,7 +28,7 @@ export default class App extends Component {
         <li
           key={u.id}
           onClick={() => this.deleteUser(u.id)}
-        >{u.name}</li>
+        >{u.name} ({Moment(u.id).fromNow()})</li>
       )
 
     return (
